@@ -1,13 +1,13 @@
-@import url(./font.css);
 :root{
-    --r : "Montserrat-Regular";
-    --b : "Montserrat-Black";
     --s : #323232;
 }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
 }
 .container{
     max-width: 1298px;
@@ -22,12 +22,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 20px;
 }
 .nav_logo{
-    font-family: var(--b);
+    font-family: Montserrat;
+    font-weight: 700;
+    font-style: Bold;
     font-size: 32px;
     line-height: 23px;
+    text-transform: uppercase;
     color: var(--s);
 }
 .nav_list1,
@@ -39,14 +41,14 @@
 }
 .nav_link1{
     text-decoration: none;
-    font-family: var(--r);
+    font-family: Montserrat;
     font-size: 18px;
     vertical-align: middle;
     text-transform: capitalize;
     color: var(--s);
 }
 .nav_list2_text{
-    font-family: var(--r);
+    font-family: Montserrat;
     font-size: 18px;
     text-transform: uppercase;
     color: var(--s);
@@ -54,13 +56,12 @@
 .hr{
     max-width: 1320px;
     width: 100%;
-    margin: 0 auto;
+    margin: 21px auto 40px;
     border: 2px solid var(--s);
     border-radius: 0.5px;
     color: var(--s);
 }
 .intro{
-    margin-top: 40px;
     margin-bottom: 60px;
 }
 .intro_box{
@@ -83,12 +84,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 73px 0 47px;
     gap: 30px;
     position: relative;
     max-width: 526px;
     width: 100%;
     box-shadow: 6px 6px 15px 0px rgba(132, 132, 132, 0.3);
-    background-color: rgb(240, 234, 234);
+    background-color: rgba(132, 132, 132, 0.3);
     border-radius: 10px;
     transition: 0.5s ease;
 }
@@ -100,6 +102,7 @@
     gap: 5px;
 }
 .intro_grid3{
+    padding: 188px 0;
     max-width: 746px;
     width: 100%;
 }
@@ -108,7 +111,7 @@
     position: absolute;
     top: 16px;
     left: 16px;
-    font-family: var(--r);
+    font-family: Montserrat;
     font-weight: 400;
     font-size: 22px;
     vertical-align: middle;
@@ -118,12 +121,9 @@
     border-radius: 10px;
 }
 .intro_grid_img{
-    margin-top: 73px;
-    margin-bottom: 47px;
     transition: 1.5s ease;
 }
 .intro_grid_img1{
-    margin: 188px 0;
     transition: 1.5s ease;
 
 }
@@ -135,15 +135,16 @@
     gap: 21px;
 }
 .intro_text2{
-    font-family: var(--b);
+    font-family: Montserrat;
     font-weight: 700;
+    font-style: Bold;
     font-size: 16px;
     vertical-align: middle;
     text-transform: uppercase;
-
+    color: black;
 }
 .intro_text1{
-    font-family: var(--r);
+    font-family: Montserrat;
     font-weight: 400;
     font-size: 16px;
     vertical-align: middle;
@@ -159,4 +160,93 @@
 .intro_grid1:hover .intro_grid_img,
 .intro_grid2:hover .intro_grid_img{
     transform: rotateY(180deg);
+}
+.about{
+    margin-bottom: 60px;
+}
+.about_catalog {
+    display: grid;
+    grid-template-columns: repeat(3, 410px);
+    gap: 40px 24px;
+    justify-content: center;
+}
+.title{
+    text-align: center;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: 2.2px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #000;
+}
+.about_catalog_item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 72px 0 39px;
+    max-width: 410px;
+    width: 100%;
+    box-shadow: 6px 6px 15px 0px rgba(132, 132, 132, 0.3);
+    background-color: rgba(132, 132, 132, 0.3);
+    border-radius: 10px;
+    gap: 20px;
+    position: relative;
+    transition: 0.5s ease;
+}
+.about_catalog_text1{
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 20px;
+    vertical-align: middle;
+    color: var(--s);
+}
+.about_catalog_text2{
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 20px;
+    vertical-align: middle;
+    color: black;
+}
+.about_catalog_sale{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: var(--s);
+    width: 120px;
+    padding: 13px 34px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 20px;
+    vertical-align: middle;
+}
+.catalog_item_box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.catalog_img{
+    background-color: white;
+    padding: 15px 15px;
+    border-radius: 10px;
+}
+.about_catalog_item:hover{
+    transform: scale(1.03);
+}
+.about_text{
+    text-align: center;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 30px;
+    vertical-align: middle;
+    margin-top: 60px;
 }
