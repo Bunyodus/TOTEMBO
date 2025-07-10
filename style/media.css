@@ -1,0 +1,158 @@
+@media(max-width:1300px){
+    .intro_grid{
+        max-width: 515px;
+        width: 100%;
+    }
+    .intro_grid3{
+        max-width: 726px;
+        width: 100%;
+    }
+    .about_catalog_item{
+        max-width: 390px;
+        width: 100%;
+    }
+    .about_catalog {
+        gap: 30px 20px;
+    }
+}
+@media(max-width:1250px){
+    .intro_grid{
+        max-width: 490px;
+        width: 100%;
+    }
+    .intro_grid3{
+        max-width: 690px;
+        width: 100%;
+    }
+    .about_catalog_item{
+        max-width: 370px;
+        width: 100%;
+    }
+}
+@media(max-width:1250px){
+    .intro_grid1,
+    .intro_grid2{
+        padding: 65px 0 40px;
+    }
+    .intro_grid3{
+        padding: 173px 0;
+    }
+    .about_catalog_item{
+        max-width: 350px;
+        width: 100%;
+    }
+    .intro_sale{
+        font-size: 20px;
+        top: 14px;
+        left: 14px;
+        padding: 9px 33px;
+    }
+}
+@media(max-width:1125px){
+    .intro_grid1,
+    .intro_grid2{
+        padding: 60px 0 35px;
+    }
+    .intro_grid3{
+        padding: 163px 0;
+    }
+    .about_catalog_item{
+        max-width: 330px;
+        width: 100%;
+    }
+    .about_catalog_sale{
+        top: 14px;
+        left: 14px;
+        padding: 11px 32px;
+        font-size: 18px;
+    }
+    .nav_list2_text{
+        font-size: 16px;
+    }
+    .intro_text2{
+        font-size: 14px;
+    }
+    .intro_text1{
+        font-size: 14px;
+    }
+    .title{
+        font-size: 28px;
+    }
+    .about_catalog_text1{
+        font-size: 18px;
+    }
+    .about_catalog_text2{
+        font-size: 18px;
+    }
+    .about_text{
+        font-size: 28px;
+    }
+    .info_left,
+    .info_right{
+        padding: 100px 0 50px 50px;
+    }
+    .info_position{
+        font-size: 18px;
+        top: 18px;
+        left: 18px;
+        padding: 12px 28px;
+    }
+    .info_title{
+        font-size: 20px;
+        max-width: 400px;
+        width: 100%;
+    }
+    .info_text{
+        font-size: 16px;
+        line-height: 20px;
+        max-width: 370px;
+        width: 100%;
+        margin: 25px 0 80px;
+    }
+    .info_right .info_text{
+        max-width: 355px;
+        width: 100%;
+    }
+    .info_time_text{
+        font-size: 14px;
+    }
+    .footer_box{
+        gap: 100px;
+    }
+    .footer_boxs{
+        gap: 35px;
+    }
+    .footer_text{
+        font-size: 20px;
+    }
+    .footer_box .footer_boxs:last-of-type .footer_text{
+        margin-bottom: 35px;
+    }
+    .footer_text1{
+        font-size: 16px;
+    }
+    .footer_app{
+        font-size: 16px;
+        margin: 50px 0 30px;
+    }
+    .footer_img_box{
+        gap: 20px;
+    }
+}
+@media(max-width:1060px){
+    .intro_grid_img1{
+        width: 256px;
+        height: 192px;
+    }
+    .intro_grid_img{
+        width: 106px;
+        height: 136px;
+    }
+    .intro_grid3{
+        padding: 150px 0;
+    }
+    .about_catalog_item{
+        max-width: 300px;
+        width: 100%;
+    }
+}

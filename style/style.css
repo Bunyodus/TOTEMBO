@@ -1,5 +1,6 @@
 :root{
     --s : #323232;
+    --w : rgba(255, 255, 255, 1);
 }
 *{
     margin: 0;
@@ -15,6 +16,17 @@ body{
     padding: 0 15px;
     margin: 0 auto;
 }
+ul{
+    list-style: none;
+}
+a{
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 18px;
+    vertical-align: middle;
+    text-transform: capitalize;
+    text-decoration: none;
+}
 .nav{
     margin-top: 50px;
 }
@@ -23,7 +35,8 @@ body{
     align-items: center;
     justify-content: space-between;
 }
-.nav_logo{
+.nav_logo,
+.logo{
     font-family: Montserrat;
     font-weight: 700;
     font-style: Bold;
@@ -36,15 +49,9 @@ body{
 .nav_list2{
     display: flex;
     align-items: center;
-    list-style: none;
     gap: 30px;
 }
 .nav_link1{
-    text-decoration: none;
-    font-family: Montserrat;
-    font-size: 18px;
-    vertical-align: middle;
-    text-transform: capitalize;
     color: var(--s);
 }
 .nav_list2_text{
@@ -67,7 +74,6 @@ body{
 .intro_box{
     display: flex;
     align-items: center;
-    justify-content: space-between;
     gap: 24px;
 }
 .intro_grid{
@@ -116,7 +122,7 @@ body{
     font-size: 22px;
     vertical-align: middle;
     text-transform: capitalize;
-    color: rgba(255, 255, 255, 1);
+    color: var(--w);
     padding: 11px 38px;
     border-radius: 10px;
 }
@@ -165,8 +171,9 @@ body{
     margin-bottom: 60px;
 }
 .about_catalog {
-    display: grid;
-    grid-template-columns: repeat(3, 410px);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
     gap: 40px 24px;
     justify-content: center;
 }
@@ -186,7 +193,7 @@ body{
     align-items: center;
     justify-content: center;
     padding: 72px 0 39px;
-    max-width: 410px;
+    max-width: 400px;
     width: 100%;
     box-shadow: 6px 6px 15px 0px rgba(132, 132, 132, 0.3);
     background-color: rgba(132, 132, 132, 0.3);
@@ -217,7 +224,7 @@ body{
     width: 120px;
     padding: 13px 34px;
     text-align: center;
-    color: white;
+    color: var(--w);
     border-radius: 10px;
     font-family: Montserrat;
     font-weight: 400;
@@ -234,7 +241,7 @@ body{
     right: 20px;
 }
 .catalog_img{
-    background-color: white;
+    background-color: var(--w);
     padding: 15px 15px;
     border-radius: 10px;
 }
@@ -276,10 +283,17 @@ body{
     background-image: url("../images/info_right.png");
 }
 .info_position{
+    font-family: Montserrat;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: var(--s);
     position: absolute;
     top: 20px;
     left: 20px;
-    background-color: white;
+    background-color: var(--w);
     text-align: center;
     padding: 13px 30px;
     border-radius: 8px;
@@ -290,7 +304,7 @@ body{
     font-size: 22px;
     vertical-align: middle;
     font-variant: small-caps;
-    color: white;
+    color: var(--w);
     max-width: 446px;
     width: 100%;
 }
@@ -322,4 +336,73 @@ body{
     vertical-align: middle;
     text-transform: uppercase;
     color: rgba(225, 225, 225, 1);
+}
+.footer{
+    background-color: var(--s);
+    padding: 100px 0 87px;
+}
+.footer_box{
+    display: flex;
+    gap: 160px;
+}
+.footer_boxs{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.footer_box .footer_boxs:last-of-type{
+    gap: 0;
+}
+.logo{
+    color: var(--w);
+}
+.footer_list{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.footer_text{
+    font-family: Montserrat;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 22px;
+    letter-spacing: 2.2px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: var(--w);
+}
+.footer_link{
+    color: var(--w);
+}
+.footer_box .footer_boxs:last-of-type .footer_text{
+    margin-bottom: 40px;
+}
+.footer_text1{
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 18px;
+    vertical-align: middle;
+    font-variant: small-caps;
+    color: var(--w);
+}
+.footer_text_box{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 0;
+}
+.footer_app{
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 2.5px;
+    vertical-align: middle;
+    font-variant: small-caps;
+    color: var(--w);
+    margin: 60px 0 40px;
+}
+.footer_img_box{
+    display: flex;
+    align-items: center;
+    gap: 26px;
 }
