@@ -1,4 +1,0 @@
- .about_catalog .about_catalog_item:first-child {
-        margin-left: 2255px;
-
-    }
