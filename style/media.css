@@ -561,7 +561,6 @@
         width: 120px;
         text-align: center;
     }
-    .intro_grid3,
     .intro_grid1,
     .intro_grid2{
         padding: 40px 0 25px;
@@ -637,17 +636,19 @@
         display: none;
     }
     .intro_media{
-        overflow-x: scroll;
         display: flex;
         align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
         gap: 10px;
     }
     .intro_grid1,
-    .intro_grid2,
-    .intro_grid3{
-        width: 250px;
+    .intro_grid2{
+        width: 210px;
         padding: 40px 0 25px;
-        flex: 0 0 auto;
+    }
+    .intro_grid3{
+        padding: 50px 0;
     }
     .about{
         margin-bottom: 40px;
@@ -699,60 +700,56 @@
         display: none;
     }
 }
+@media(max-width:460px){
+    .intro_box{
+        display: flex;
+    }
+    .intro_media{
+        display: none;
+    }
+    .intro_grid3{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        height: 297px;
+    }
+}
 @media(max-width:410px){
+    .intro_box{
+        display: none;
+    }
+    .intro_media{
+        display: flex;
+        justify-content: center;
+    }
+    .intro_grid1{
+        width: 310px;
+    }
+    .intro_grid2,
+    .intro_grid3{
+        display: flex;
+        flex-direction: column;
+        width: 150px;
+        padding: 0;
+        height: 200px;
+    }
     .about{
         margin-bottom: 30px;
     }
-    .about_catalog_item{
-        padding: 30px 0 15px;
-        width: 150px;
-        height: 250px;
-    }
-    .about_catalog_sale{
-        top: 5px;
-        left: 5px;
-        padding: 5px 15px;
-        font-size: 12px;
-        border-radius: 4px;
-    }
-    .about_catalog_text2{
-        text-align: center;
-    }
-    .about_text{
-        font-size: 20px;
-    }
-    .img{
-        width: 50px;
-        height: 90px;
-    }
-    .catalog_item_box{
-        gap: 5px;
-        top: 5px;
-        right: 5px;
-    }
-    .catalog_img{
-        width: 30px;
-        height: 30px;
-        padding: 10px;
+    .about_catalog{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: start;
+        flex: 0 0 auto;
     }
 }
 @media(max-width:350px){
-    .about{
-        margin-bottom: 25px;
+    .intro_grid1{
+        width: 290px;
     }
-    .about_catalog_item{
-        padding: 30px 0 10px;
-        width: 120px;
-        height: 240px;
-    }
-    .about_catalog_sale{
-        top: 5px;
-        left: 5px;
-        padding: 5px 15px;
-        font-size: 12px;
-        border-radius: 4px;
-    }
-    .about_catalog_text1{
-        text-align: center;
+    .intro_grid2,
+    .intro_grid3{
+        width: 140px;
+        height: 220px;
     }
 }
